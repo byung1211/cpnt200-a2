@@ -30,6 +30,12 @@ a {
 <script>
 import cpnt200_header from '../components/cpnt200_header.vue'
 export default {
+
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
   components: { cpnt200_header },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
