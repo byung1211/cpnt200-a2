@@ -19,3 +19,19 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'profile'
+    label: 'Profile'
+    folder: 'content/profile'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Date of Birth', name: 'date', widget: 'datetime' }
+      - { label: "Picture", name: "picture", widget: "image", choose_url: true, default: "/uploads/profile_image.png", multiple: false}
+      - { label: 'Introduction', name: 'introduction', widget: 'string' }
+      - { label: 'Information', name: 'information', widget: 'markdown' }
+
+      
