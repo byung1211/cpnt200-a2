@@ -16,24 +16,15 @@
         src="/pexels-richard-verbeek-572861.jpg" 
         sizes="sm:100vw md:50vw lg:400px"/>
     <br />
-    5. This is a post for blog.
-    <article>
-      <h1>{{ blog.title }}</h1>
-      <nuxt-content :document="blog" />
-    </article>
-    <br />
-    6. This is a profile posted a porfile collection.
-    <article>
-      <h1>{{ profile.name }}</h1>
-      <h1>{{ profile.dateofbirth }}</h1>
-      <img src="{{profile.picture}}">
-      <h1>{{ profile.introduction }}</h1>
-      <h1>{{ profile.information}}</h1>
-      
-    </article>
-    <br />
-    7. This is a code snippet posted a code snippet collection.
-    <nuxt-content :document="code" />
+
+    5. This title comes from a post for blog collection. <br />
+    Title: {{ blog.title }}<br />
+    
+    6. This name comes from a profile for porfile collection. <br />
+    Name: {{ profile.name }}<br />
+
+    7. This title comes from a post for code snippet collection.
+    Title: {{ code.title }}<br />
 
   </article>
 </template>
