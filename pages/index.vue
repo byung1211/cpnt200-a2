@@ -50,7 +50,7 @@ export default {
     const profile = await $content('profile/2021-11-21-this-is-my-profile').fetch()
     const code = await $content('code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml').fetch()
     return {
-      profile,
+      profile
     }
   }
 }
