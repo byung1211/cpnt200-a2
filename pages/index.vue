@@ -17,10 +17,22 @@
         sizes="sm:100vw md:50vw lg:400px"/>
     <br />
     5. This is a post for blog.
-    <nuxt-content :document="blog" />
+    <article>
+      <h1>{{ blog.title }}</h1>
+      <nuxt-content :document="blog" />
+    </article>
     <br />
     6. This is a profile posted a porfile collection.
-    <nuxt-content :document="profile" />
+    <article>
+      <h1>{{ profile.name }}</h1>
+      <h1>{{ profile.dateofbirth }}</h1>
+      <nuxt-img 
+        src="{{profile.picture}}" 
+        sizes="sm:50vw md:25vw lg:200px"/>   
+      <h1>{{ profile.introduction }}</h1>
+      <h1>{{ profile.information}}</h1>
+      
+    </article>
     <br />
     7. This is a code snippet posted a code snippet collection.
     <nuxt-content :document="code" />
@@ -50,7 +62,7 @@ export default {
     const profile = await $content('profile/2021-11-21-this-is-my-profile').fetch()
     const code = await $content('code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml').fetch()
     return {
-      profile
+      page, blog, profile, code
     }
   }
 }
