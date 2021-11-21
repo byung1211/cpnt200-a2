@@ -27,7 +27,7 @@
       <h1>{{ profile.name }}</h1>
       <h1>{{ profile.dateofbirth }}</h1>
       <nuxt-img 
-        src="{{profile.picture}}" 
+        src="profile.picture" 
         sizes="sm:50vw md:25vw lg:200px"/>   
       <h1>{{ profile.introduction }}</h1>
       <h1>{{ profile.information}}</h1>
