@@ -29,9 +29,23 @@ collections:
       preview: false
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
-      - { label: 'Date of Birth', name: 'date', widget: 'datetime' }
+      - { label: 'Date of Birth', name: 'dateofbirth', widget: 'datetime' }
       - { label: "Picture", name: "picture", widget: "image", choose_url: true, default: "/uploads/profile_image.png", multiple: false}
       - { label: 'Introduction', name: 'introduction', widget: 'string' }
       - { label: 'Information', name: 'information', widget: 'markdown' }
+
+  - name: 'code-snippet'
+    label: 'Code snippet'
+    folder: 'content/code-snippet'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Code', name: 'code', widget: 'code' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
 
       
