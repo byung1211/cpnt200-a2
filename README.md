@@ -2,7 +2,7 @@
 ### Author: Byung Uk An
 ### Links to:
   - **Github Repo:** https://github.com/byung1211/cpnt200-a2
-  - **Netlify Webpage:** 
+  - **Netlify Webpage:** https://cpnt200-a2-byung1211.netlify.app/admin
   
 ### Attributions
 
