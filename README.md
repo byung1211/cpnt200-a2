@@ -12,7 +12,8 @@
 	
 - 2021.11.20
 
-  This is continued from the assignment 1.
+  This is continued from the assignment 1 and I have done the requirements in this assignment.
+  And I digged little deeper with some experiments and found that, using a metaphor, this netlifycms is a wheel when workpress is a rocket. 
 
 - 2021.11.19
 	
