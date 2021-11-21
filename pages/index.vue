@@ -48,9 +48,9 @@ export default {
   components: { cpnt200_header },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
-    const page = await $content('blog/2021-11-21-this-is-a-test-post').fetch()
-    const page = await $content('profile/2021-11-21-this-is-my-profile').fetch()
-    const page = await $content('code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml').fetch()
+    const blog = await $content('blog/2021-11-21-this-is-a-test-post').fetch()
+    const profile = await $content('profile/2021-11-21-this-is-my-profile').fetch()
+    const code = await $content('code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml').fetch()
     return {
       page, blog, profile, code,
     }
