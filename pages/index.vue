@@ -15,7 +15,16 @@
     <nuxt-img 
         src="/pexels-richard-verbeek-572861.jpg" 
         sizes="sm:100vw md:50vw lg:400px"/>
-    
+    <br />
+    5. This is a post for blog.
+    <nuxt-content :document="blog" />
+    <br />
+    6. This is a profile posted a porfile collection.
+    <nuxt-content :document="profile" />
+    <br />
+    7. This is a code snippet posted a code snippet collection.
+    <nuxt-content :document="code" />
+
   </article>
 </template>
 <style scoped>
@@ -39,8 +48,11 @@ export default {
   components: { cpnt200_header },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
+    const page = await $content('blog/2021-11-21-this-is-a-test-post').fetch()
+    const page = await $content('profile/2021-11-21-this-is-my-profile').fetch()
+    const page = await $content('code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml').fetch()
     return {
-      page
+      page, blog, profile, code,
     }
   }
 }
