@@ -28,7 +28,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Date of Birth', name: 'dateofbirth', widget: 'datetime' }
       - { label: "Picture", name: "picture", widget: "image", choose_url: true, default: "/uploads/profile_image.png", multiple: false}
       - { label: 'Introduction', name: 'introduction', widget: 'string' }
