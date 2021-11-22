@@ -25,12 +25,11 @@
       Title: {{ blog.title }}<br />
       
       6. This name comes from a profile for porfile collection. <br />
-      Title: {{ profile.title }}<br />
+      Name: {{ profile.name }}<br />
       <img :src="profile.picture" alt="Alex-Byung UK An" />
 
-      7. This title comes from a post for code snippet collection.
+      7. This title comes from a post for code snippet collection.<br />
       Title: {{ code.title }}<br />
-      <div> {{ info }} </div>
     </article>
     <br /><br />
     8. This is a footer form the components folder.
